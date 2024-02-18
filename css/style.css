@@ -90,5 +90,8 @@ button{
         border: none;
         background-color: transparent;
     }
-
+    #imgPlay {
+        width: 2rem;
+        height: 2rem;
+    }
 }

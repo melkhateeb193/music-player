@@ -56,6 +56,7 @@ nextAudio.addEventListener("click",()=> {
 if (currentIndex < songDetails.length -1) {
     currentIndex++;
     showData(currentIndex)
+    audio.play();
 }else {
     // Optionally, handle what happens when you reach the end of the array
     console.log("Reached the end of the array");
@@ -66,6 +67,7 @@ prevAudio.addEventListener("click",()=> {
 if (currentIndex > 0) {
     currentIndex --;
     showData(currentIndex)
+    audio.play();
 }else {
     // Optionally, handle what happens when you reach the end of the array
     console.log("Reached the begin of the array");

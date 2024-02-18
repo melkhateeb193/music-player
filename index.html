@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <div class="mp3">
+            <div class="top">
+                <img   class="itteratedImg"     alt="cover-1">
+            </div>
+            <div class="bottom d-flex flex-column justify-content-center align-items-center mt-4 w-100 ">
+                <h1 class="text-center text-white"></h1>
+                <p class="author"></p>
+                <audio id="myAudio" >
+                    <source src="" type="audio/mpeg">
+                </audio>
+                <span class="d-flex justify-content-between w-100   ">
+                    <p class="startCounter">0:00</p>
+                    <p class="finishCounter">1:12</p>
+                </span>
+                <progress id="progressBar" value="0" max="100" class="w-100 "></progress>
+
+                <div class="buttons w-100 d-flex justify-content-center mt-3  ">
+                <button id="prevAudio"><img src="dccl--javascript-music-player/Stop_and_play_fill-1.svg" alt=""></button>
+                <button  class="play"><img src="dccl--javascript-music-player/Play_fill.svg" alt=""></button>
+                <button id="nextAudio" ><img src="dccl--javascript-music-player/Stop_and_play_fill_reverse.svg" alt=""></button>
+                
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

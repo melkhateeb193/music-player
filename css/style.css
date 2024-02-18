@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    font-family: "Outfit", sans-serif;
+    --primary-color-one: #C93B76;
+    --primary-color-two: #212936;
+    --primary-color-three: #4D5562;
+    --primary-color-four: #E5E7EB;
+    --primary-color-five: #121826a6;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient( 45deg, var(--primary-color-one)  ,#212936  80%); 
+
+}
+.author , .startCounter , .finishCounter{
+color: var(--primary-color-three);
+}
+.mp3{
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #121826a6;
+    width: 23rem;
+    height: 35rem;
+}
+
+img{
+    width: 100%;
+    border-radius: 20px;
+    transition: opacity 1s ease-in-out;
+}
+#progressBar {
+    width: 100% !important;
+    height: 8px;
+
+}
+h1 {
+    font-size: 1.6rem;
+    transition: opacity 1s ease-in-out;
+}
+progress[value]::-webkit-progress-value {
+background-color: var(--primary-color-one) !important;
+  
+      border-radius: 5px; 
+  }
+
+button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.play{
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color-one);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 812px) {
+    .mp3{
+
+        width: 18rem;
+        height: 29rem;
+    }
+
+    h1{
+        font-size: 1rem;
+    }
+
+    p{
+        font-size: 0.8rem;
+        color: var(--primary-color-three);
+    }
+
+    audio{
+        width: 100%;
+        outline: none;
+        border: none;
+        background-color: transparent;
+    }
+
+}
